@@ -2,4 +2,4 @@
 
 Hello there
 
-Go there [https://aleen42.github.io/markdown-only/][link]
+Go there [Markdown](https://daringfireball.net/projects/markdown/)
