@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{%- comment -%}
+  Each file in _sections/ becomes one <section> and one maze exit, sorted by `order`.
+  The anchor id is the file name; `label` overrides the maze label (defaults to `title`).
+{%- endcomment -%}
+{% assign sections = site.sections | sort: "order" %}
+{% for section in sections %}
+<section id="{{ section.slug }}"{% if section.label %} data-title="{{ section.label | escape }}"{% endif %}>
+  <h2>{{ section.title }}</h2>
+  {{ section.content | markdownify }}
+</section>
+{% endfor %}

@@ -1,0 +1,32 @@
+# Site settings — shown in the left sidebar and the page <head>.
+title: Julien Rosenberger
+position: PhD student at Inria Bordeaux
+keywords:
+  - curiosity
+  - phenomenal experience
+  - computational modelling
+description: Personal research page of Julien Rosenberger.
+lang: en
+
+# Contact icons in the sidebar; remove a line to hide its icon.
+social:
+  linkedin: https://www.linkedin.com/in/julien-rosenberger/
+  github: https://github.com/julien-rsbrg
+  email: julien.rosenberger@inria.fr
+
+url: https://julien-rsbrg.github.io
+baseurl: ""
+
+markdown: kramdown
+
+# Page sections, shown in `order` (one maze exit each). See _sections/.
+collections:
+  sections:
+    output: false
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - Maze Slider Portfolio

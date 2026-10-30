@@ -1,0 +1,11 @@
+<aside class="sidebar">
+  <header class="sidebar-intro">
+    <h1 class="site-name">{{ site.title }}</h1>
+    {% if site.keywords %}<p class="site-keywords">{{ site.keywords | join: ' · ' }}</p>{% endif %}
+    {% if site.position %}<p class="site-position">{{ site.position }}</p>{% endif %}
+  </header>
+
+  {% include navigator.html %}
+
+  {% include social-links.html %}
+</aside>
